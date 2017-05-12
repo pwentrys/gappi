@@ -1,0 +1,97 @@
+<!doctype html>
+<!--
+Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE
+The complete set of authors may be found at http://polymer.github.io/AUTHORS
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS
+-->
+<html>
+<head>
+    <title>{{ page_title }}</title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="import" href="/bower_components/core-icons/core-icons.html">
+    <link rel="import" href="/bower_components/core-icons/av-icons.html">
+    <link rel="import" href="/bower_components/sampler-scaffold/sampler-scaffold.html">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,400' rel='stylesheet' type='text/css'>
+    <link rel="import" href="/bower_components/core-item/core-item.html">
+    <link rel="import" href="/bower_components/core-menu/core-submenu.html">
+    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">-->
+    <link rel="import" href="/bower_components/paper-fab/paper-fab.html">
+    <link rel="import" href="/bower_components/core-collapse/core-collapse.html">
+
+    <style>
+
+        html, body {
+            height: 100%;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            text-rendering: optimizeLegibility;
+            -ms-text-size-adjust: 100%;
+            font-size: 14px;
+            font-family: "RobotoDraft", "Roboto", sans-serif;
+            background-color: #303030;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+
+    </style>
+
+</head>
+
+<body unresolved>
+
+<sampler-scaffold label="" fit>
+
+    <paper-icon-button class="menuButton" icon="menu"></paper-icon-button>
+    <!--<paper-fab id="play-store-link" class="sourceButton bottom" style="background-color:#FB8C00;color:#fff"
+               icon="av:play-shopping-bag" title="Check us out on the Google Play™ Store."></paper-fab>-->
+
+    <core-item label="Home" tag="home" url="home.html"></core-item>
+    <core-item label="TODO" tag="todo" url="todo.html"></core-item>
+   <!--
+    <core-item label="Games" tag="games" url="games.html"></core-item>
+    <core-item label="Companion Apps" tag="companion" url="companion.html"></core-item>
+    <a href="https://plus.google.com/communities/102790952789741795388" target="_blank">
+        <core-item label="Become a Tester" tag="beta" url=""></core-item>
+    </a>
+    <core-item label="Contact" tag="contact" url="contact.html"></core-item>
+    <core-item label="About" tag="about" url="about.html"></core-item>
+    -->
+    <!--
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-59022605-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    -->
+</sampler-scaffold> <!-- Them samplerz -->
+</body>
+
+</html>
